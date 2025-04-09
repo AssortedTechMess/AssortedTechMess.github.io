@@ -6,19 +6,71 @@
   <title>Astronaut’s Lament</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f0f0f0;
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a1a; /* Dark background for a space theme */
+      color: #e0e0e0; /* Light text color */
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .logo {
+      max-width: 300px; /* Adjust based on your logo size */
+      margin: 20px auto;
+      display: block;
     }
     h1 {
-      color: #333;
+      color: #ffffff; /* White title for contrast */
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+    .tagline {
+      color: #cccccc; /* Slightly dimmed tagline */
+      font-size: 1.2em;
+      margin: 10px 0 20px;
+      font-style: italic;
     }
     p {
-      color: #666;
+      color: #e0e0e0;
       max-width: 600px;
       margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+    .features {
+      margin: 30px 0;
+    }
+    .features h2 {
+      color: #ffffff;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .features li {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #cccccc;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007bff; /* EGS blue */
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      margin: 20px 0;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
     }
     a {
       color: #007bff;
@@ -30,9 +82,23 @@
   </style>
 </head>
 <body>
-  <h1>Astronaut’s Lament</h1>
-  <p>A challenging 2D platformer set on a hostile alien planet. Navigate treacherous terrain, dodge asteroids, and survive to escape!</p>
-  <p><a href="https://store.epicgames.com/en-US/p/astronauts-lament-2475b1">Available Now on Epic Games Store!</a></p>
-  <p><a href="/privacy.html">Privacy Policy</a></p>
+  <div class="container">
+    <img src="logo.png" alt="Astronaut’s Lament Logo" class="logo">
+    <h1>Astronaut’s Lament</h1>
+    <p class="tagline">Survive the Alien Abyss!</p>
+    <p>A challenging 2D platformer set on a hostile alien planet. Navigate treacherous terrain, dodge asteroids, and survive to escape!</p>
+    <div class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Procedurally generated levels with moving platforms</li>
+        <li>Deadly hazards: asteroids, toxic gas, and meteor showers</li>
+        <li>Unique grayscale art style with color-shifting effects</li>
+        <li>13 atmospheric tracks to immerse you in the alien world</li>
+        <li>Track high scores for levels reached and asteroids destroyed</li>
+      </ul>
+    </div>
+    <a href="https://store.epicgames.com/en-US/p/astronauts-lament-2475b1" class="button">Available Now on Epic Games Store!</a>
+    <p><a href="/privacy.html">Privacy Policy</a></p>
+  </div>
 </body>
 </html>
